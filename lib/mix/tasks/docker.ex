@@ -40,7 +40,7 @@ ENTRYPOINT /home/{{{NAME}}}/bin/{{{NAME}}} console
     |> create_dockerimage
   end
 
-  defp parse_args(argv) do
+  defp parse_args(_argv) do
     %{
             name: Mix.Project.config |> Keyword.get(:app) |> Atom.to_string
      }

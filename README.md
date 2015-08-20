@@ -3,6 +3,10 @@ Exdocker
 
 Mix task to turn an Elixir release into a Docker image.
 
+Note: currently this project *requires* that R17.3 is used while
+compiling. If you use a different version, the image will fail to
+start.
+
 Usage:
 
     MIX_ENV=prod mix docker
